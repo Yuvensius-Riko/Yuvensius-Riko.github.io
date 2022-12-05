@@ -1,0 +1,118 @@
+html {
+	position: relative;
+}
+
+body {
+	margin-bottom: 5px;
+	margin-top: 30px;
+	padding-top: 50px;
+}
+.jumbotron {
+	background-image: url(gambar/sasuke-bg.jpg);
+	background-size: cover;
+	height: 400px;
+	background-position: 0 -80px;
+	background-attachment: fixed;
+	color: #80729b;
+	overflow: hidden;
+}
+.jumbotron h1 .jumbotron p {
+	text-shadow: 5px 5px 10px rgba(0,0,0,0.5)
+}
+
+.sasuke img{ 
+
+	border: 5px solid #2c1161;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.5)
+}
+
+hr {
+	width: 250px;
+	border-bottom: 5px solid #999;
+	margin: auto;
+}
+
+section { 
+  min-height: 600px; 
+  display: block;
+  content: ' ';
+  margin-top: 50px;
+  height: 105px;
+ 
+}
+
+.about .tentang {
+	opacity: 0;
+	transition: 5s;
+}
+
+.about .tentang.Tmuncul {
+	opacity: 1;
+}
+.about .satu{
+	opacity: 0;
+	transition: 6s;
+}
+.about .satu.ada{
+	opacity: 1;
+}
+
+.about .pKiri, .pKanan {
+	opacity: 0;
+	transform: translate(-50px, 0) rotate(-90deg);
+	transition: 1s;
+}
+.about .pKanan {
+	transform: translate(50px, 0) rotate(90deg);
+}
+.about .pKiri.pMuncul, .pKanan.pMuncul {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.about p {
+	text-align: justify;
+}
+
+.portofolio {
+	background-color: #eee;
+	min-height: 800px;
+}
+.portofolio .thumbnail {
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+.portofolio .thumbnail.muncul {
+	opacity: 1;
+	transform: translate(0, -0);
+}
+
+hr {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.contact {
+	min-height: 1500px;
+	margin-top: 30px;
+}
+.contact label {
+	font-weight: bold;
+}
+.footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	height: 0px;
+	background-color: #eee;
+}
+.footer p {
+	display: inline-block;
+	font-size: 20px;
+	margin-top: auto;
+	font-family: times new roman;
+	padding-top: 30px;
+}
+.footer img {
+	width: 200px
+}
