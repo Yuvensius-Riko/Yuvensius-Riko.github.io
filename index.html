@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en" id="home">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script>
+  // Init Scrollspy
+      $('body').scrollspy({ target: '#main-nav' });
+
+      // Smooth Scrolling
+      $('#main-nav a').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+
+          const hash = this.hash;
+
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800,
+            function() {
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+</script>
+  </head>
+  <body data-spy="scroll">
+    <!-- navbar -->
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark bg-dark px-3 mb-3 fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand page-scroll" href="#home">Yuvensius Riko</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#portofolio">Portofolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- akhir navbar  -->
+
+    <!-- jumbotron -->
+    <div data-bs-spy="scroll" data-bs-target="navbar-example2" data-bs-offset="0" data-bs-root-margin="0px 0px -51%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-2 rounded-3" tabindex="0">
+     <div class="p-5 mb-7 bg-secondary rounded-1 text-center jumbotron">
+      <div class="sasuke">
+        <img src="../belajar/gambar/sasuke.jpeg" class="rounded-circle" style="height: 200px; width: 200px;">
+          <h1>Yuvensius Riko</h1>
+          <p>Student | Football Player  </p>
+        </div>
+      </div>
+    <!-- akhir jumbotron -->
+
+    <!-- about -->
+    <section class="about" id="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-center tentang">About</h2>
+            <hr class="satu">
+          </div>
+        </div> 
+
+        <div class="row">
+          <div class="col-sm-5 offset-sm-1">
+            <p class="pKiri">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-sm-5">
+            <p class="pKanan">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          
+        </div> 
+
+
+      </div>
+
+
+    </section>
+    <!-- akhir about -->
+
+    <!-- portofolio -->
+    <section class="portofolio" id="portofolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>Portofolio</h2>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row thumbnail">
+          <div class="col-sm-4">
+            <a href="">
+              <img src="gambar/1.jpeg" class="img-thumbnail">
+            </a>
+          </div> 
+          <div class="col-sm-4">
+            <a href="">
+              <img src="gambar/1.jpeg" class="img-thumbnail">
+            </a>
+          </div>  
+          <div class="col-sm-4">
+            <a href="">
+              <img src="gambar/1.jpeg" class="img-thumbnail">
+            </a>
+          </div>  
+          <div class="col-sm-4">
+            <a href="">
+              <img src="gambar/1.jpeg" class="img-thumbnail">
+            </a>
+          </div>  
+          <div class="col-sm-4">
+            <a href="">
+              <img src="gambar/1.jpeg" class="img-thumbnail">
+            </a>
+          </div>  
+          <div class="col-sm-4">
+            <a href="">
+              <img src="gambar/1.jpeg" class="img-thumbnail">
+            </a>
+          </div>   
+        </div>
+      </div>
+
+    </section>
+    <!-- akhir portofolio -->
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>Contact</h2>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-8 offset-sm-2">
+            <form>
+              <div class="form-grup">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" class="form-control" placeholder="Masukan Nama Lengkap">
+              </div>
+              <div class="form-grup">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Nama@mail.com">
+              </div>
+               <div class="form-grup">
+                <label for="telp">No Telp</label>
+                <input type="tel" id="telp" class="form-control" placeholder="08XXXXXXXXXX">
+              </div>
+                <br>
+              <select class="form-control">
+                <label>Choose Option</label>
+                <option>-- Choose Option--</option>
+                <option>Football</option>
+                <option>College</option>
+              </select>
+              <label>Message</label>
+              <textarea class="form-control" rows="10"></textarea>
+              <br>
+               <button type="submit" class="btn btn-success mb-3">Kirim Pesan</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <!-- akhir contact  -->
+
+    <!-- footer -->
+    <section class="footer" id="footer">
+    <footer>
+      <div class="container">
+           <div class="row">
+             <div class="col-sm-12 text-center" >
+               <p>&copy; 2022 | Built by.<i class="bi bi-x-diamond-fill"></i><a href="https://twitter.com/yuvensius_riko1" target="_blank">RIKO</a></p>
+               <br>
+               <a href="https://twitter.com/yuvensius_riko1" target="_blank"><img src="gambar/R.jpg"></a>
+             </div>
+           </div>
+      </div>
+    </footer>
+    </section>
+
+    <!-- akhir footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../bootstrap-5.2.3-dist/js/jquery-3.6.1.min.js"></script>
+    <script src="../bootstrap-5.2.3-dist/js/script1.js"></script>
+
+    
+
+  </body>
+</html>
